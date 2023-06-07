@@ -39,4 +39,23 @@ int main(void) {
 
         opcao = opcao_desejada();
     }
+
+    if(opcao == 2) {
+        float dinheiro, troco;
+
+        system("cls");
+        printf("O valor total e %.2f R$\n", total);
+        printf("Insira o dinheiro pago: \n");
+        scanf("%f", &dinheiro);
+        troco = dinheiro - total;
+        printf("Seu troco sera de %.2f R$\n", troco);
+    }
+
+    else if(opcao == 3) {
+        total = 0;
+        system("cls");
+        printf("Seja bem vindo! \n");
+        opcao = opcao_desejada();
+    }
+
 }
